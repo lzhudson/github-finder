@@ -8,7 +8,7 @@ module.exports = {
     github: path.resolve(__dirname, 'src', 'github.js') 
   },
   output: {
-    path: path.resolve(__dirname, 'bunlded'),
+    path: path.resolve(__dirname, 'public'),
     filename: '[name].js'
   },
   devServer: {
