@@ -1,3 +1,5 @@
+import Github from './github';
+import UI from './ui';
 const searchUser = document.getElementById('searchUser');
 
 const github = new Github();
