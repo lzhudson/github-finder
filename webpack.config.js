@@ -12,7 +12,7 @@ module.exports = {
     filename: '[name].js'
   },
   devServer: {
-    contentBase: path.join(__dirname, './'),
+    contentBase: path.join(__dirname, 'public'),
     compress: false,
     port: 9000
   }
