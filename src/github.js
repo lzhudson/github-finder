@@ -1,4 +1,4 @@
-class Github {
+export default class Github {
   constructor() {
     this.repos_count = 5;
     this.repos_sort = 'created: asc';
