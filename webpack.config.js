@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, 'js', 'app.js'),
-    ui: path.resolve(__dirname, 'js', 'ui.js'),
-    github: path.resolve(__dirname, 'js', 'github.js') 
+    app: path.resolve(__dirname, 'src', 'app.js'),
+    ui: path.resolve(__dirname, 'src', 'ui.js'),
+    github: path.resolve(__dirname, 'src', 'github.js') 
   },
   output: {
     path: path.resolve(__dirname, 'bunlded'),
