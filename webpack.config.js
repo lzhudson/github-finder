@@ -10,5 +10,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'bunlded'),
     filename: '[name].js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, './'),
+    compress: false,
+    port: 9000
   }
 }
