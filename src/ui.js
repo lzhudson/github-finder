@@ -3,7 +3,6 @@ class UI {
     this.profile = document.getElementById('profile');
   }
 
-  // Display profile in UI.
   showProfile(user) {
     
     this.profile.innerHTML = `
@@ -35,7 +34,6 @@ class UI {
     `;
   }
 
-  // Show user repos
   showRepos(repos) {
     let output = '';
 
@@ -56,33 +54,22 @@ class UI {
       `;
     })
 
-    // Output repos
     document.getElementById('repos').innerHTML = output;
   }
 
-  // Show alert message
   showAlert(message, className) {
-    // Clear any remaining alerts
     this.clearAlert();
     const div = document.createElement('div');
-    // add classes
     div.className = className;
-    // add text
     div.appendChild(document.createTextNode(message));
-    // get parent
     const container = document.querySelector('.searchContainer');
-    // get search box
     const search = document.querySelector('.search');
-    // insert alert
     container.insertBefore(div, search);  
-
-    // Timeout after 3 seconds
     setTimeout(()=> {
       this.clearAlert();
     }, 3000)
   }
 
-  // Clear Alert Message
   clearAlert() {
     const currentAlert = document.querySelector('.alert');
 
@@ -90,7 +77,6 @@ class UI {
       currentAlert.remove();
     }
   }
-  // Clear profile
   clearProfile(){
     this.profile.innerHTML = '';
   }
